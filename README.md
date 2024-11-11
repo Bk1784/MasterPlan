@@ -1,5 +1,7 @@
 # master_plan
 
+PRAKTIKUM 1
+
 1. ![image](https://github.com/user-attachments/assets/cc8b2b08-b5f9-40f7-aa25-5bc99a3a3b7e)
 2. Maksud dari langkah 4 adalah menggambarkan sebuah rencana yang teridiri dari nama dan daftar tugas. bisa membuat objek dalam Plan dengan nama tertentu dan daftar tugas yang relevan. kode ini dirancang agar lebih fleksibel, mudah dipahami, dan aman dengan menggunakan nilai default, parameter bernama, dan immutable list.
 3. variable plan dalam langkah 6 digunakan untuk menyimpan objek dari kelas plan, yang akan menjadi data utama dalam tampilan PlanScreen. Kelas plan kemungkinan menyimpan informasi terkait rencana yang ingin ditampilkan atau dikelola pada layar tersebut, seperti daftar tugas atau kegiatan.
@@ -8,6 +10,28 @@
    akan menampilkan checkbox dan textfromFiled untuk mengedit atau menambah deskripsi tugas
 5. iniState() untuk memeprsiapkan dan menginisialisasi berbagai hal sebelum widget dibangun
    dispose() dipanggil ketika widget sudah tidak lagi digunakan atau dihapus dari widget tree. fungsi utamanya untuk memebrsihkan dan melepas sumber dara yang digunakan oleh widget.
+
+PRAKTIKUM 2
+1.
+![Screenshot 2024-11-11 111621](https://github.com/user-attachments/assets/e7b3c9ad-b8e3-43fd-b1dc-eb5127f4b29d)
+2. InheritedWidget adalah kelas dasar yang digunakan untuk membuat widget yang dapat membagikan data (state) ke widget lain di bawahnya dalam pohon widget. InheritedWidget memungkinkan data untuk dibagikan ke widget anak tanpa harus melewati banyak level widget secara eksplisit melalui konstruktor. Namun, InheritedWidget hanya menyediakan cara untuk menyimpan dan mendistribusikan data, dan tidak menyediakan cara untuk memberitahu widget anak ketika data tersebut berubah. InheritedNotifier adalah turunan dari InheritedWidget yang lebih spesifik dan berfungsi untuk menangani pemberitahuan perubahan data secara otomatis. Dalam kasus ini, InheritedNotifier digunakan dengan ValueNotifier<Plan>, yang merupakan objek yang dapat memberi tahu widget terkait ketika data (dalam hal ini objek Plan) berubah.
+3. pada praktikum 3 adalah contoh implementasi getter dalam Dart untuk menghitung dan menampilkan jumlah tugas yang telah diselesaikan serta memberikan pesan mengenai status tugas tersebut. hal ini dikarenakan untuk enkapsulasi, reusability dan pemisahan tanggung jawab.
+4.
+   ![image](https://github.com/user-attachments/assets/26530040-50b1-4423-a6b3-2b9549217a24)
+   menampilkan ketika menambahkan tugas dan checkbox maka akan menampilkan 1 out of 2 takss
+
+PRAKTIKUM 3
+1.
+   ![image](https://github.com/user-attachments/assets/935f5948-e941-458d-b145-f1e6e41f8ae1)
+   ![image](https://github.com/user-attachments/assets/c0c64ab0-c94c-4b7b-9df6-5fd8a188c769)
+   ![image](https://github.com/user-attachments/assets/e56aee69-1742-4783-a68e-a497891bfbbe)
+
+
+2. ketika melakukan Push maka hasil yang telah diketikkan pada planCreatorScreen akan ditampilkan pada planScreen
+
+3. 
+   ![image](https://github.com/user-attachments/assets/9e04b376-e4ec-47e6-bae4-7720a8a3710e)
+memuat memasukkan tugas yang diinputkan
 
 
 A new Flutter project.
